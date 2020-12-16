@@ -1,0 +1,306 @@
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 300%;
+  margin-bottom: 0; }
+
+.tituloInterior {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150%;
+  font-weight: 800;
+  color: white; }
+
+.subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  font-weight: 400; }
+
+.parrafoInterior {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  color: white; }
+
+body {
+  margin: 0px; }
+
+.fondoNaranja {
+  background-image: url("img/BG.png"); }
+
+.inicio {
+  height: 90vh;
+  background-color: #ffb718; }
+
+.inicio__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%; }
+
+.inicio__header__logo {
+  margin-right: auto;
+  width: 200px; }
+
+.inicio__header__navMenu {
+  width: 40vw;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
+  font-weight: 400;
+  list-style: none; }
+  .inicio__header__navMenu li {
+    display: inline-block;
+    padding-left: 5%; }
+    .inicio__header__navMenu li a {
+      text-decoration: none;
+      color: white; }
+
+.inicio__contenido {
+  margin-left: 10%;
+  margin-right: 40%;
+  margin-top: 6%; }
+
+.inicio__contenido__titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 600%;
+  margin-bottom: 0;
+  color: white; }
+
+.inicio__contenido__subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150%;
+  font-weight: 400;
+  color: white; }
+
+.sobreNosotros {
+  height: 85vh;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "texto imagen"; }
+
+.sobreNosotros a {
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: black;
+  transition: all s1s; }
+
+.sobreNosotros__texto {
+  grid-area: texto; }
+
+.sobreNosotros__texto p {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding-right: 30%; }
+
+.sobreNosotros__imagen {
+  grid-area: imagen; }
+
+.sobreNosotros__imagen img {
+  width: 60%; }
+
+section {
+  margin-left: 10%; }
+
+.portfolio {
+  margin-right: 10%;
+  margin-bottom: 10%; }
+
+.portfolio__texto {
+  margin-bottom: 5%; }
+
+.portfolio__carrusel {
+  padding-right: 20%; }
+
+.servicios {
+  height: 65vh;
+  padding-right: 20%;
+  padding-left: 10%;
+  background-color: #ffb718;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .servicios img {
+    width: 100px; }
+
+.servicios__servicio1 {
+  width: 25%;
+  text-align: center; }
+
+.servicios__servicio2 {
+  width: 25%;
+  text-align: center; }
+
+.servicios__servicio3 {
+  width: 25%;
+  text-align: center; }
+
+.iconos {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  margin: auto;
+  margin-bottom: 30px; }
+
+.disenio-web-icon {
+  background-image: url(img/disenio-web.png); }
+
+.contenido-redes-icon {
+  background-image: url(img/contenido-redes.png); }
+
+.gestion-redes-icon {
+  background-image: url(img/gestion-redes.png); }
+
+.contacto {
+  margin-right: 50%;
+  margin-bottom: 10%; }
+
+.contacto__texto {
+  margin-top: 25%; }
+  .contacto__texto p {
+    padding-top: 3%; }
+
+.contactForm label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  font-weight: 400; }
+
+.contactForm {
+  margin-top: 10%;
+  width: 100%; }
+
+.contactBox {
+  position: relative;
+  width: 100%; }
+
+.contactForm .contactBox {
+  margin-bottom: 5%; }
+
+.contactForm .contactBox input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black; }
+
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black; }
+
+.contactForm .contactButtons input {
+  border: none;
+  background-color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: black; }
+
+@media screen and (min-width: 1024px) {
+  .inicio__header__navBarResponsive {
+    display: none; } }
+
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0px; }
+  .inicio__header__navMenu {
+    display: none; }
+  .inicio__contenido__titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 300%;
+    margin-bottom: 0;
+    color: white; }
+  .inicio__contenido {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 6%;
+    padding-top: 5%; }
+  section {
+    margin-left: 0%; }
+  .inicio__contenido__subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+    font-weight: 400;
+    color: white;
+    padding-top: 8%; }
+  .inicio {
+    height: 95vh;
+    background-color: #ffb718;
+    background-image: url("img/BG.png"); }
+  .inicio__header__logo {
+    margin-right: auto;
+    width: 110px; }
+  .sobreNosotros {
+    height: auto;
+    margin-top: 25%;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column-reverse; }
+  .sobreNosotros p {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-right: 0%; }
+  .sobreNosotros h2 {
+    padding-top: 15%; }
+  .sobreNosotros__imagen img {
+    width: 70%;
+    position: static; }
+  .portfolio {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 35%;
+    margin-top: 35%; }
+  .portfolio__carrusel {
+    padding-right: 0%;
+    margin-top: 15%; }
+  .servicios {
+    height: auto;
+    background-color: #ffb718;
+    background-image: url("img/BG.png");
+    display: flex;
+    flex-direction: column;
+    padding-right: 15%;
+    padding-left: 15%; }
+  .servicios__servicio1 {
+    width: auto;
+    text-align: center;
+    margin-top: 30%; }
+  .servicios__servicio2 {
+    width: auto;
+    text-align: center;
+    margin-top: 20%; }
+  .servicios__servicio3 {
+    width: auto;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 30%; }
+  .contacto {
+    margin-left: 8%;
+    margin-right: 8%; }
+  .contacto__texto h2 {
+    font-size: 300%; }
+  .contacto__texto p {
+    padding-top: 5%; }
+  .inicio__header__navBarResponsive {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+    font-weight: 400;
+    list-style: none; }
+    .inicio__header__navBarResponsive a {
+      text-decoration: none;
+      color: white; }
+  .dropdown-menu a {
+    color: black; } }
